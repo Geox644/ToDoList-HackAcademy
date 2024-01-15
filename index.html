@@ -22,12 +22,9 @@
         </header>
         <section class="main" style="display: block;">
             <input id="toggle-all" type="checkbox" class="toggle-all">
-            <label for="toggle-all">
-                ::before
-                "Mark all as complete"
-            </label>
+            <label for="toggle-all">Mark all as complete</label>
             <ul class="todo-list">
-                <li data-id="123" class>
+                <!-- <li data-id="123" class>
                     <div class="view">
                     <input class="toggle" type="checkbox">
                     <label>test</label>
@@ -40,23 +37,25 @@
                     <label>test1</label>
                     <button class="delete"></button>
                     </div>
-                </li>
+                </li> -->
             
             </ul>
         </section>
         <footer class="footer" style="display: block;">
         <span class="todo-count"><strong>0</strong>
-            item left
+            items left
         </span>
         <ul class="filters">
             <li>
-                <a class="selected" href="#/">All</a>
+                <a class="selected" href="#" data-filter="all">All</a>
             </li>
             <li>
-                <a href="#/active">Active</a>
+                <!-- <a href="#/active">Active</a> -->
+                <a href="#/active" data-filter="active">Active</a>
             </li>
             <li>
-                <a href="#/completed">Completed</a>
+                <!-- <a href="#/completed">Completed</a> -->
+                <a href="#/completed" data-filter="completed">Completed</a>
             </li>
         </ul>
         <button class="clear-completed" style="display: none;"></button>
